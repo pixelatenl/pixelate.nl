@@ -18,6 +18,7 @@ $ gulp
 $ gulp serve
 ```
 ## TODO
+* [x] Create duo tone effect for images
 * [ ] Add favicons
 * [ ] Create a loading animation when the video is loading
 * [ ] Add "Connect w/ me" icons

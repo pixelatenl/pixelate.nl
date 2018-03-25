@@ -27,21 +27,18 @@ $typewriter-text-color: $color-white !default;
     vertical-align: top;
     white-space: nowrap; /* Keeps the content on a single line */
     opacity: 0;
-    animation: typeWriter 3s steps(40, end);
+    animation: typeWriter 2.5s steps(40, end);
     //, blinkCursor 0.5s step-end infinite;
     animation-fill-mode: forwards;
 
     &:nth-child(1) {
-        animation-delay: 3s;
+        animation-delay: 2s;
     }
     &:nth-child(2) {
-        animation-delay: 5s;
+        animation-delay: 4.5s;
     }
     &:nth-child(3) {
         animation-delay: 7s;
-    }
-    &:nth-child(4) {
-        animation-delay: 9s;
     }
 }
 
