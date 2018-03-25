@@ -1,0 +1,48 @@
+/*
+Ranges
+
+The ranges used to configure the breakpoints.
+
+_ranges.scss
+
+* **$range-palm**   : ( 320,  440) !default;
+* **$range-palm-s** : ( 320,  360) !default;
+* **$range-palm-m** : ( 361,  400) !default;
+* **$range-palm-l** : ( 401,  440) !default;
+
+* **$range-hand**   : ( 441,  680) !default;
+* **$range-hand-s** : ( 441,  520) !default;
+* **$range-hand-m** : ( 521,  600) !default;
+* **$range-hand-l** : ( 601,  680) !default;
+
+* **$range-lap**    : ( 681, 1023) !default;
+* **$range-lap-s**  : ( 681,  800) !default;
+* **$range-lap-m**  : ( 801,  920) !default;
+* **$range-lap-l**  : ( 921, 1023) !default;
+
+* **$range-desk**   : (1024, false) !default;
+* **$range-desk-s** : (1024, 1280) !default;
+* **$range-desk-m** : (1281, 1640) !default;
+* **$range-desk-l** : (1641, false) !default;
+* **$range-desk-xl** : (1921, false) !default;
+
+*/
+
+$max-width: 960px;
+$range-palm: ( 320,  440) !default;
+$range-palm-s: ( 320,  360) !default;
+$range-palm-m: ( 361,  400) !default;
+$range-palm-l: ( 401,  440) !default;
+$range-hand: ( 441,  680) !default;
+$range-hand-s: ( 441,  520) !default;
+$range-hand-m: ( 521,  600) !default;
+$range-hand-l: ( 601,  680) !default;
+$range-lap: ( 681, 1023) !default;
+$range-lap-s: ( 681,  800) !default;
+$range-lap-m: ( 801,  920) !default;
+$range-lap-l: ( 921, 1023) !default;
+$range-desk: (1024, false) !default;
+$range-desk-s: (1024, 1280) !default;
+$range-desk-m: (1281, 1640) !default;
+$range-desk-l: (1641, false) !default;
+$range-desk-xl: (1921, false) !default;

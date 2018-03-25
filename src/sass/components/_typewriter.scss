@@ -1,0 +1,78 @@
+$typewriter-text-color: $color-white !default;
+
+.typewriter {
+    @include media(0, $range-lap) {
+        margin: 0.8em 0;
+        padding: 10px;
+        text-align: left;
+        font-size: $font-size-90;
+        line-height: $line-height-90;
+    }
+    @include media($range-desk, false) {
+        margin: 3em 0;
+        max-width: 40em;
+        vertical-align: top;
+    }
+    display: inline-block;
+    color: $typewriter-text-color;
+}
+
+.typewriter__line {
+    display: inline-block;
+    float: left;
+    clear: both;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    margin: 0.25em 0;
+    //border-right: 0.15em solid orange; /* The typeWriter cursor */
+    vertical-align: top;
+    white-space: nowrap; /* Keeps the content on a single line */
+    opacity: 0;
+    animation: typeWriter 3s steps(40, end);
+    //, blinkCursor 0.5s step-end infinite;
+    animation-fill-mode: forwards;
+
+    &:nth-child(1) {
+        animation-delay: 3s;
+    }
+    &:nth-child(2) {
+        animation-delay: 5s;
+    }
+    &:nth-child(3) {
+        animation-delay: 7s;
+    }
+    &:nth-child(4) {
+        animation-delay: 9s;
+    }
+}
+
+.typewriter__actions {
+    float: left;
+    clear: both;
+    margin: 1em 0;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes typeWriter {
+    from {
+        width: 0;
+        opacity: 1;
+    }
+    to {
+        width: 100%;
+        border: 0;
+        opacity: 1;
+    }
+}
+//NOTE Cursor and blink disabled. Cursors appears on element widght and not text width.
+//@keyframes blinkCursor {
+//    from,
+//    to {
+//        border-color: transparent;
+//    }
+//    50% {
+//        border-color: orange;
+//    }
+//}

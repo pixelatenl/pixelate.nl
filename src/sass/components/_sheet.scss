@@ -1,0 +1,89 @@
+$sheet-text-color: $color-white !default;
+$sheet-close-button-color: $color-primary-100 !default;
+$sheet-background-color: $color-primary-500 !default;
+
+.sheet {
+    @include font-smoothing(on);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: none;
+
+    &.is-open {
+        display: block;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch; // NOTE Webkit, does not have the smooth scroll by default on elements with scroll enabled
+        width: 340px;
+        height: 100%;
+        outline: none;
+        background-color: $sheet-background-color;
+        box-shadow: 0 0 10px 10px rgba($sheet-background-color, 0.4);
+        color: $sheet-text-color;
+        animation: slideInRight 0.3s ease-out;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+}
+
+.sheet__content {
+    display: none;
+    padding: 20px 30px;
+    &.is-open {
+        display: block;
+    }
+}
+
+.sheet__header {
+    position: relative;
+}
+
+.sheet__title {
+    margin: ($line-height-100/2) 0;
+    font-weight: 700;
+    font-size: $font-size-500;
+    line-height: $line-height-100;
+}
+
+.sheet__close-button {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    text-indent: -99999px;
+    opacity: 0.3;
+    transition: opacity 0.2s ease-in;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &:before,
+    &:after {
+        position: absolute;
+        left: 20px;
+        width: 2px;
+        height: 40px;
+        background-color: $sheet-close-button-color;
+        content: ' ';
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+}
+
+.sheet__avatar {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    border-radius: 280px;
+}
