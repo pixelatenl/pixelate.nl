@@ -54,8 +54,12 @@ $sheet-background-color: $color-primary-500 !default;
     overflow: hidden;
     width: 40px;
     height: 40px;
+    outline: none;
+    border: 0;
+    background: none;
     text-indent: -99999px;
     opacity: 0.3;
+    cursor: pointer;
     transition: opacity 0.2s ease-in;
 
     &:hover {
@@ -65,6 +69,7 @@ $sheet-background-color: $color-primary-500 !default;
     &:before,
     &:after {
         position: absolute;
+        top: 0;
         left: 20px;
         width: 2px;
         height: 40px;

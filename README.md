@@ -25,6 +25,7 @@ $ gulp serve
 * [ ] Add slideOutRight animation for sheets
 * [ ] Fix the blinking cursors for the typewriter effect (currently disabled)
 * [ ] Adjust analytics settings for using cookies which are GDPR compliant
+* [ ] Add a printable version
 
 ## Video
 Video provided by: https://coverr.co/

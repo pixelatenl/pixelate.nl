@@ -9,7 +9,7 @@ Header set Referrer-Policy "no-referrer"
 
 # force ssl
 RewriteCond     %{SERVER_PORT} ^80$
-RewriteRule     ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+RewriteRule     ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R=301]
 
 # BEGIN Compress text files
 <ifModule mod_deflate.c>
