@@ -3,9 +3,9 @@
  * Initiate the video if possible and adds a class when the video is loaded
  */
 function video() {
-    var video = document.getElementById('videoSource');
-    var noVideo = document.getElementById('noVideo');
-    var page = document.getElementById('page');
+    const video = document.getElementById('videoSource');
+    const noVideo = document.getElementById('noVideo');
+    const page = document.getElementById('page');
     // Check video support
     if(supportsVideoType('webm', video) === 'probably' || supportsVideoType('h264', video) === 'probably' || supportsVideoType('ogg', video) === 'probably') {
         video.load();
@@ -27,7 +27,7 @@ video();
  *  @param {object} element - video element
  */
 function supportsVideoType(type, element) {
-    var formats = {
+    const formats = {
         ogg: 'video/ogg; codecs="theora"',
         h264: 'video/mp4; codecs="avc1.42E01E"',
         webm: 'video/webm; codecs="vp8, vorbis"',

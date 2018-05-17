@@ -1,19 +1,19 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var uglify = require('gulp-uglify');
-var gutil = require('gulp-util');
-var concat = require('gulp-concat');
-var htmlmin = require('gulp-htmlmin');
-var runSequence = require('run-sequence');
-var sourcemaps = require('gulp-sourcemaps');
-var sassLint = require('gulp-sass-lint');
-var inject = require('gulp-inject');
-var bourbon = require('node-bourbon');
-var imagemin = require('gulp-imagemin');
-var bs = require('browser-sync').create(); // create a browser sync instance.
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const uglify = require('gulp-uglify-es').default;
+const gutil = require('gulp-util');
+const concat = require('gulp-concat');
+const htmlmin = require('gulp-htmlmin');
+const runSequence = require('run-sequence');
+const sourcemaps = require('gulp-sourcemaps');
+const sassLint = require('gulp-sass-lint');
+const inject = require('gulp-inject');
+const bourbon = require('node-bourbon');
+const imagemin = require('gulp-imagemin');
+const bs = require('browser-sync').create(); // create a browser sync instance.
 
-var config = {
+const config = {
     paths: {
         html: {
             src: ['./src/**/*.html'],
