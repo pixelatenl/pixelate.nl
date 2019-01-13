@@ -52,6 +52,12 @@ export default {
     align-items: center;
     justify-content: center;
 }
+@media only screen and (max-width: 768px) {
+    .page__inner {
+        flex-direction: column;
+        padding: var(--global--spacer--md);
+    }
+} 
 .page__footer {
     position: absolute;
     right: var(--global--spacer--sm);

@@ -25,7 +25,7 @@ export default {
     color: rgb(var(--global--color--white));
     vertical-align: top;
     opacity: 0;
-    animation: fadeIn 5.5s ease-out;
+    animation: fadeIn 1.5s ease-out;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }

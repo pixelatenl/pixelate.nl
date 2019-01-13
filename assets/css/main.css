@@ -37,4 +37,5 @@ body {
     font-family:  var(--global--body--FontFamily);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(var(--global--color--primary--500));
 }
