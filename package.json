@@ -1,29 +1,28 @@
 {
-  "name": "pixelate-nl",
-  "version": "1.0.0",
+  "name": "pixelate.nl",
+  "version": "0.0.2",
+  "description": "Company Page for Pixelate BV",
   "author": "Roland Poot <roland.poot@pixelate.nl>",
-  "description": "pixelate.nl",
   "private": true,
-  "main": "dist/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
-  "license": "UNLICENSED",
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "npm": "^6.5.0",
+    "nuxt": "^2.3.4",
+    "sanitize.css": "^8.0.0"
+  },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-htmlmin": "^4.0.0",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-inject": "^4.3.2",
-    "gulp-sass": "^4.0.1",
-    "gulp-sass-lint": "^1.3.4",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify-es": "^1.0.1",
-    "gulp-util": "^3.0.8",
-    "node-bourbon": "^4.2.8",
-    "run-sequence": "^2.2.1"
-  },
-  "dependencies": {}
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.12.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^5.1.0"
+  }
 }

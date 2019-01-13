@@ -1,0 +1,10 @@
+.list {
+    margin: 1em;
+    padding-left: 1em;
+    list-style-type: circle;
+}
+.list li {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+

@@ -1,0 +1,18 @@
+/* Links */
+.a {
+    border-bottom: 1px solid rgb(var(--global--color--secondary--100));
+    color: rgb(var(--global--color--secondary--100));
+    text-decoration: none;
+    transition: color 0.2s ease-in;
+}
+
+.a:hover {
+    border-bottom-color: rgb(var(--global--color--secondary--200));
+    color: rgb(var(--global--color--secondary--200));
+}
+
+.a:focus {
+    outline: none;
+    border-bottom-color: rgb(var(--global--color--secondary--200));
+    color: rgb(var(--global--color--secondary--200));
+}

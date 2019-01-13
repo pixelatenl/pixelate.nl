@@ -1,9 +1,8 @@
-# pixelate-nl
+# pixelate.nl
 
-> pixelate.nl
-
-Pixelate.nl website
-
+> pixelate.nl website 
+Company website for Pixelate BV
+[pixelate.nl](https://pixelate.nl)
 
 ## Build Setup
 
@@ -11,23 +10,14 @@ Pixelate.nl website
 # install dependencies
 $ npm install # Or yarn install
 
-# gulp (build)
-$ gulp 
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-# gulp (serve for local development)
-$ gulp serve
+# build for production and launch server
+$ npm run build
+$ npm start
+
+# generate static project
+$ npm run generate
 ```
-## TODO
-* [x] Create duo tone effect for images
-* [ ] Add favicons
-* [ ] Create a loading animation when the video is loading
-* [ ] Add "Connect w/ me" icons
-* [ ] Add slideOutRight animation for sheets
-* [ ] Fix the blinking cursors for the typewriter effect (currently disabled)
-* [ ] Adjust analytics settings for using cookies which are GDPR compliant
-* [ ] Add a printable version
 
-## Video
-Video provided by: https://coverr.co/
-Source: https://coverr.co/s3/zip/For_Wes.zip
-License: https://coverr.co/license_and_faq

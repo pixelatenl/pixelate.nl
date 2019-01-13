@@ -1,0 +1,84 @@
+
+/* Sheet */
+.sheet {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    width: 340px;
+    height: 100%;
+    outline: none;
+    background-color: rgb(var(--global--color--primary--500));
+    box-shadow: 0 0 10px 10px rgba(var(--global--color--primary--500), 0.4);
+    color: rgb(var(--global--color--white));
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.sheet.page-enter-active {
+    animation: slideInRight 0.3s ease-out;
+}
+.sheet.page-leave-active {
+    animation: slideOutRight 0.3s ease-in;
+}
+
+.sheet__content {
+    padding: 20px 30px;
+}
+
+.sheet__content.is-open {
+    display: block;
+}
+
+.sheet__header {
+    position: relative;
+}
+
+.sheet__title {
+    margin: 1rem 0;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.sheet__close-button {
+    position: absolute;
+    top: -3px;
+    right: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: 0;
+    background: none;
+    text-indent: -99999px;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in;
+}
+
+.sheet__close-button:hover {
+    opacity: 1;
+}
+
+.sheet__close-button:before,
+.sheet__close-button:after {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 2px;
+    height: 40px;
+    background-color: rgb(var(--global--color--primary--100));
+    content: ' ';
+}
+
+.sheet__close-button:before {
+    transform: rotate(45deg);
+}
+
+.sheet__close-button:after {
+    transform: rotate(-45deg);
+}

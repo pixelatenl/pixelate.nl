@@ -1,0 +1,27 @@
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: var(--global--spacer--sm) var(--global--spacer--md) ;
+    outline: none;
+    border: 1px solid rgb(var(--global--color--primary));
+    border-radius: 3px;
+    color: rgb(var(--global--color--white));
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.01);
+    font-size: 1rem;
+    line-height: 1rem;
+    transition: all 0.2s ease;
+}
+
+.button:hover,
+.button.nuxt-link-active {
+    border-color: rgb(var(--global--color--white));
+    color: rgb(var(--global--color--white));
+}
+
+/* Button Group */
+.button-group__button {
+    margin-right: var(--global--spacer--sm);
+}
