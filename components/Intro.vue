@@ -34,6 +34,12 @@ export default {
     font-size: 2.3rem;
     margin: 0 0 var(--global--spacer--sm) 0;
 }
+@media only screen and (max-width: 768px) {
+    .intro__header {
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+    }
+}
 .intro__line {
     margin: 0 0 var(--global--spacer--sm) 0;
 }

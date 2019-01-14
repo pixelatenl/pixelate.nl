@@ -19,8 +19,14 @@
     position: relative;
     display: inline-block;
     width: 320px;
-    height: 320px;
+    min-height: 320px;
     vertical-align: top;
+}
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 280px;
+        min-height: 280px;
+    }
 }
 
 .logo__circle {
