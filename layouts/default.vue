@@ -10,7 +10,7 @@
     <section class="video">
       <div class="video__container">
           <div class="video__filter"></div>
-          <video autoplay loop autobuffer muted playsinline  class="video__source" id="videoSource">
+          <video autoplay muted loop class="video__source" id="videoSource">
               <source src="~/static/video/video.mp4" type="video/mp4"/>
               <source src="~/static/video/video.ogv" type="video/ogg"/>
               <source src="~/static/video/video.webm" type="video/webm"/>
