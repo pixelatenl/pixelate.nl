@@ -34,13 +34,13 @@ module.exports = {
   /*
   ** Nuxt Modules
   */
-  modules: [
-    '@nuxtjs/axios'
-  ],
+  // modules: [
+  //   '@nuxtjs/axios'
+  // ],
 
-  axios: {
-    // proxyHeaders: false
-  },
+  // axios: {
+  //   // proxyHeaders: false
+  // },
   
   // router: {
   //   base: '/test/'

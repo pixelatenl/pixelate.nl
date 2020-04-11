@@ -1,7 +1,7 @@
 <template>
     <article class="intro">
         <h1 class="intro__header">Pixelating great ideas</h1>
-        <p class="intro__line">Hi, I'm a freelance front end developer and designer</p>
+        <p class="intro__line">Hi, I'm a freelance Product Designer and User Interface Developer </p>
         <p class="intro__line">I'm currently <strong>pixelating</strong> energy data for energyworx... </p>
         <div class="intro__actions">
             <div class="button-group">

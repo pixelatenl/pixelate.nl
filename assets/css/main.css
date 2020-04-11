@@ -22,9 +22,10 @@
     /* --global--concept--indicator--modifier */
     --global--color--white: 255, 255, 255;
 
-    --global--color--primary: 61, 181, 206;
+    --global--color--primary: 72, 185, 209;
     --global--color--primary--100: var(--global--color--primary);
-    --global--color--primary--500: 12, 36, 41;
+    --global--color--primary--500: 15, 53, 61;
+    --global--color--primary--600: 5, 18, 20;
 
     --global--color--secondary: 244, 136, 34;
     --global--color--secondary--100: var(--global--color--secondary);
