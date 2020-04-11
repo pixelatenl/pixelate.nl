@@ -21,3 +21,6 @@ $ npm start
 $ npm run generate
 ```
 
+## TODO
+* [ ] Add favicon.ico
+* [ ] Refactor the sheet into a component and remove the ESC key addEventListener function
