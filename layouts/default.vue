@@ -43,6 +43,21 @@ export default {
 	components: {
 		Logo,
 		Intro
+	},
+	mounted() {
+		const self = this;
+		window.addEventListener('keyup', function(event) {
+			if (event.keyCode === 27) {
+				self.closeSheet();
+			}
+		});
+	},
+	methods: {
+		closeSheet() {
+			if (this.$route.name !== 'index') {
+				this.$router.push({ path: '/' });
+			}
+		}
 	}
 };
 </script>

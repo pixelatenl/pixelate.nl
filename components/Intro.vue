@@ -12,7 +12,6 @@
     </article>
 </template>
 
-
 <style lang="css" scoped>
 .intro {
 	margin: 3em 0;
