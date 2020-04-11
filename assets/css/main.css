@@ -1,42 +1,42 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :root {
-    font-size: 118.75%;
+	font-size: 118.75%;
 
-    /* --global--concept--size */
-    --global--spacer--xs: .25rem;
-    --global--spacer--sm: .5rem;
-    --global--spacer--md: 1rem;
-    --global--spacer--lg: 2rem;
+	/* --global--concept--size */
+	--global--spacer--xs: 0.25rem;
+	--global--spacer--sm: 0.5rem;
+	--global--spacer--md: 1rem;
+	--global--spacer--lg: 2rem;
 
-    /* --global--concept--PropertyCamelCase */
-    --global--body--FontSize: 1rem;
-    --global--body--FontFamily: 'Open Sans', sans-serif;
+	/* --global--concept--PropertyCamelCase */
+	--global--body--FontSize: 1rem;
+	--global--body--FontFamily: 'Open Sans', sans-serif;
 
-    --global--body--BackgroundColor: #ccc;
+	--global--body--BackgroundColor: #ccc;
 
-    /* --global--concept--indicator--modifier */
-    --global--color--white: 255, 255, 255;
+	/* --global--concept--indicator--modifier */
+	--global--color--white: 255, 255, 255;
 
-    --global--color--primary: 72, 185, 209;
-    --global--color--primary--100: var(--global--color--primary);
-    --global--color--primary--500: 15, 53, 61;
-    --global--color--primary--600: 5, 18, 20;
+	--global--color--primary: 72, 185, 209;
+	--global--color--primary--100: var(--global--color--primary);
+	--global--color--primary--500: 15, 53, 61;
+	--global--color--primary--600: 5, 18, 20;
 
-    --global--color--secondary: 244, 136, 34;
-    --global--color--secondary--100: var(--global--color--secondary);
-    --global--color--secondary--200: 62, 181, 206;
+	--global--color--secondary: 244, 136, 34;
+	--global--color--secondary--100: var(--global--color--secondary);
+	--global--color--secondary--200: 62, 181, 206;
 }
 
 body {
-    margin: 0;
-    font-size: var(--global--body--FontSize);
-    font-family:  var(--global--body--FontFamily);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: rgb(var(--global--color--primary--500));
+	margin: 0;
+	font-size: var(--global--body--FontSize);
+	font-family: var(--global--body--FontFamily);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: rgb(var(--global--color--primary--500));
 }

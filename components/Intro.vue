@@ -12,44 +12,38 @@
     </article>
 </template>
 
-<script>
-export default {
-
-}
-</script>
 
 <style lang="css" scoped>
 .intro {
-    margin: 3em 0;
-    max-width: 40em;
-    color: rgb(var(--global--color--white));
-    vertical-align: top;
-    opacity: 0;
-    animation: fadeIn 1.5s ease-out;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
+	margin: 3em 0;
+	max-width: 40em;
+	color: rgb(var(--global--color--white));
+	vertical-align: top;
+	opacity: 0;
+	animation: fadeIn 1.5s ease-out;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
 }
 
 .intro__header {
-    font-size: 2.3rem;
-    margin: 0 0 var(--global--spacer--sm) 0;
+	font-size: 2.3rem;
+	margin: 0 0 var(--global--spacer--sm) 0;
 }
 @media only screen and (max-width: 768px) {
-    .intro__header {
-        font-size: 1.7rem;
-        line-height: 1.7rem;
-    }
+	.intro__header {
+		font-size: 1.7rem;
+		line-height: 1.7rem;
+	}
 }
 .intro__line {
-    margin: 0 0 var(--global--spacer--sm) 0;
+	margin: 0 0 var(--global--spacer--sm) 0;
 }
 
 .intro__actions {
-    opacity: 0;
-    margin: 1em 0;
-    animation: fadeIn 1.5s ease-out;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
+	opacity: 0;
+	margin: 1em 0;
+	animation: fadeIn 1.5s ease-out;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
 }
-
 </style>

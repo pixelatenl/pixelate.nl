@@ -13,7 +13,7 @@
     height: 100%;
     outline: none;
     background-color: rgb(var(--global--color--primary--500));
-    box-shadow: 0 0 10px 10px rgba(var(--global--color--primary--600), 0.2); 
+    box-shadow: 0 0 10px 10px rgba(var(--global--color--primary--600), 0.2);
     color: rgb(var(--global--color--white));
     -ms-overflow-style: -ms-autohiding-scrollbar;
 }
