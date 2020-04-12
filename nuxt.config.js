@@ -10,7 +10,7 @@ module.exports = {
     title: 'Pixelate',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'initial-scale=1.0, maximum-scale=1, width=device-width' },
+      { name: 'viewport', content: 'initial-scale=1.0, width=device-width' },
       { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
       { hid: 'description', name: 'description', content: 'Pixelate' }
     ],

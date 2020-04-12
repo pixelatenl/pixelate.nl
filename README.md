@@ -23,4 +23,6 @@ $ npm run generate
 
 ## TODO
 * [x] Add favicon.ico
+* [ ] Design :focus state (Interactive controls are keyboard focusable and display a focus indicator)
+* [x] Improve accessibility score
 * [ ] Refactor the sheet into a component and remove the ESC key addEventListener function
