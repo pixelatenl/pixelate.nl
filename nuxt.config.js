@@ -15,7 +15,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Pixelate' }
     ],
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,700i,800' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap' }
     ]
   },
   /*
@@ -31,21 +31,6 @@ module.exports = {
     '~/assets/css/sheet.css',
     '~/assets/css/animations.css'
   ],
-  /*
-  ** Nuxt Modules
-  */
-  // modules: [
-  //   '@nuxtjs/axios'
-  // ],
-
-  // axios: {
-  //   // proxyHeaders: false
-  // },
-  
-  // router: {
-  //   base: '/test/'
-  // },
-
   /*
   ** Plugins
   */
