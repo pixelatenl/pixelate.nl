@@ -5,7 +5,7 @@
             <h1 class="sheet__title">About</h1>
             <nuxt-link to="/" class="sheet__close-button">Close</nuxt-link>
         </header>
-        <p class="p">I'm a Product Designer and User Interface Developer with over 15 years of experience in designing and developing user interfaces and digital products.</p>
+        <p class="p">I'm a (Product) Designer and User Interface Developer with over 20 years of experience in designing and developing user interfaces and digital products.</p>
         <h2 class="h2">Connect with me</h2>
         <p class="p">I'm not very active on social media, but I do have a Linkedin Account. Otherwise just email me.</p>
         <ul class="list">
