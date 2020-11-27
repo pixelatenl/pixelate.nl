@@ -95,7 +95,7 @@
 
 @keyframes logo__animation {
 	0% {
-		transform: translateY(-2000%);
+		transform: translateY(-2500%);
 	}
 	50% {
 		transform: translateY(30%);
