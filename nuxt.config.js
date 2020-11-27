@@ -17,7 +17,8 @@ module.exports = {
     ],
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap' }
-    ]
+    ],
+    noscript: [{ innerHTML: 'This website requires JavaScript.' }]
   },
   /*
   ** Global CSS
