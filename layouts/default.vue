@@ -18,7 +18,7 @@
 					id="videoSource"
 					aria-describedby="Pixelate is coding on a Macbook, pixelating great ideas"
 					aria-hidden="true"
-					tabindex="-1" 
+					tabindex="-1"
 				>
 					<source src="~/static/video/video.mp4" type="video/mp4" />
 					<source src="~/static/video/video.ogv" type="video/ogg" />
@@ -93,6 +93,12 @@ export default {
 	bottom: var(--global--spacer--sm);
 	color: rgb(var(--global--color--primary--100));
 	font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.page__footer {
+		padding: 20px;
+	}
 }
 
 .video {

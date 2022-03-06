@@ -1,8 +1,8 @@
 <template>
     <article class="intro">
         <h1 class="intro__header">Pixelating great ideas</h1>
-        <p class="intro__line">I'm a freelance (Product) Designer and User Interface Developer </p>
-        <p class="intro__line">I'm currently <strong>pixelating</strong> energy data for energyworx... </p>
+        <p class="intro__line">I'm a freelance (Product) Designer and UX Engineer.</p>
+        <p class="intro__line">I'm currently <strong>pixelating</strong> energy data... </p>
         <div class="intro__actions">
             <div class="button-group">
                 <nuxt-link to="/about" class="button-group__button button">About</nuxt-link>
@@ -22,6 +22,12 @@
 	animation: fadeIn 1.5s ease-out;
 	animation-delay: 2s;
 	animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 768px) {
+	.intro {
+		margin: 1em 0 2em 0;
+	}
 }
 
 .intro__header {

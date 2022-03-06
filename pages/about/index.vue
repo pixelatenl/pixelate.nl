@@ -10,7 +10,7 @@
         <p class="p">I'm not very active on social media, but I do have a Linkedin Account. Otherwise just email me.</p>
         <ul class="list">
             <li><a href="https://www.linkedin.com/in/roland-poot/" class="a">Linkedin</a></li>
-            <li><a href="mailto:roland.poot@pixelate.nl" class="a">roland.poot@pixelate.nl</a></li>
+            <li><a href="mailto:roland@pixelate.nl" class="a">roland@pixelate.nl</a></li>
             <li><a href="https://github.com/pixelatenl" class="a">Github</a></li>
         </ul>
         <h2 class="h2">Skills</h2>
