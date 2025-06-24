@@ -13,9 +13,9 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "npm": "^6.14.9",
-    "nuxt": "^2.14.7",
-    "sanitize.css": "^12.0.1"
+    "npm": "^11.4.2",
+    "nuxt": "^2.18.1",
+    "sanitize.css": "^13.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

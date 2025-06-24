@@ -7,7 +7,6 @@
         </header>
         <p class="p">For assistance, please contact me via:</p>
         <ul class="list">
-            <li><a href="tel:+31850020094" class="a">+31 (0) 85 0020094</a></li>
             <li><a href="mailto:support@pixelate.nl" class="a">support@pixelate.nl</a></li>
         </ul>
     </section>

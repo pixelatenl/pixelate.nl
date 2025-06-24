@@ -19,6 +19,7 @@
             <li><a href="https://wikipedia.org/wiki/HyperText_Markup_Language" class="a">HTML</a></li>
             <li><a href="https://wikipedia.org/wiki/Cascading_Style_Sheets" class="a">CSS</a></li>
             <li><a href="https://code.visualstudio.com/" class="a">Visual Studio Code</a></li>
+            <li><a href="https://www.figma.com/" class="a">Figma</a></li>
             <li><a href="https://www.sketchapp.com/" class="a">Sketch</a></li>
             <li><a href="https://affinity.serif.com/" class="a">Affinity</a></li>
         </ul>
