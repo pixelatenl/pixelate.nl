@@ -1,26 +1,22 @@
 # pixelate.nl
 
-> pixelate.nl website 
-Company website for Pixelate BV
-[pixelate.nl](https://pixelate.nl)
+The company website of Pixelate BV, the independent studio of Roland Poot.
+Live at [pixelate.nl](https://pixelate.nl/).
 
-## Build Setup
+## Stack
 
-``` bash
+- Nuxt 4 (Vue 3), static site generation
+- Plain CSS, no UI framework
+- GitHub Actions workflow that builds and uploads the static site on every push to `main`
+
+## Build setup
+
+```bash
 # install dependencies
-$ npm install
+npm install
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+npm run dev
 
-# generate static project
-$ npm run generate
-```
-
-The generated site is deployed by manually uploading `.output/public/` to the Apache host.
-
-## TODO
-* [x] Add favicon.ico
-* [x] Design :focus state (Interactive controls are keyboard focusable and display a focus indicator)
-* [x] Improve accessibility score
-* [x] Refactor the sheet into a component and remove the ESC key addEventListener function
+# generate the static site into .output/public/
+npm run generate
