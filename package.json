@@ -4,6 +4,7 @@
 	"description": "Company Page for Pixelate BV",
 	"author": "Roland Poot <roland.poot@pixelate.nl>",
 	"private": true,
+	"type": "module",
 	"scripts": {
 		"dev": "nuxt dev",
 		"build": "nuxt build",
