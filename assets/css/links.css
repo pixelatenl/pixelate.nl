@@ -16,3 +16,10 @@
 	border-bottom-color: rgb(var(--global--color--secondary--200));
 	color: rgb(var(--global--color--secondary--200));
 }
+
+.a:focus-visible {
+	border-bottom-color: rgb(var(--global--color--secondary--200));
+	color: rgb(var(--global--color--secondary--200));
+	outline: 2px solid rgb(var(--global--color--secondary--200));
+	outline-offset: 2px;
+}

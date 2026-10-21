@@ -16,7 +16,7 @@
 }
 
 .button:hover,
-.button.nuxt-link-active {
+.button.router-link-active {
 	border-color: rgb(var(--global--color--white));
 	color: rgb(var(--global--color--white));
 }
@@ -24,4 +24,11 @@
 /* Button Group */
 .button-group__button {
 	margin-right: var(--global--spacer--sm);
+}
+
+.button:focus-visible {
+	border-color: rgb(var(--global--color--white));
+	color: rgb(var(--global--color--white));
+	outline: 2px solid rgb(var(--global--color--white));
+	outline-offset: 2px;
 }

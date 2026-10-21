@@ -1,12 +1,19 @@
 # tools
 .idea
-.nuxt
 
 # dependencies
 node_modules
 
 # logs
-npm-debug.log
+npm-debug.log*
 
 # build
+.nuxt
+.output
 dist
+.data
+.nitro
+.cache
+
+# env
+.env

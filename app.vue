@@ -5,7 +5,7 @@
 				<logo />
 				<intro />
 			</div>
-			<nuxt />
+			<NuxtPage />
 		</section>
 		<section class="video">
 			<div class="video__container">
@@ -20,9 +20,8 @@
 					aria-hidden="true"
 					tabindex="-1"
 				>
-					<source src="~/static/video/video.mp4" type="video/mp4" />
-					<source src="~/static/video/video.ogv" type="video/ogg" />
-					<source src="~/static/video/video.webm" type="video/webm" />
+					<source src="/video/video.mp4" type="video/mp4" />
+					<source src="/video/video.webm" type="video/webm" />
 					<p>Your browser cannot play the provided video file.</p>
 				</video>
 			</div>
@@ -34,36 +33,8 @@
 		</footer>
 	</div>
 </template>
-<script>
-import Logo from '~/components/Logo.vue';
-import Intro from '~/components/Intro.vue';
-
-export default {
-	data: () => {
-		return {
-			currentYear: new Date().getFullYear(),
-		};
-	},
-	components: {
-		Logo,
-		Intro,
-	},
-	mounted() {
-		const self = this;
-		window.addEventListener('keyup', function (event) {
-			if (event.keyCode === 27) {
-				self.closeSheet();
-			}
-		});
-	},
-	methods: {
-		closeSheet() {
-			if (this.$route.name !== 'index') {
-				this.$router.push({ path: '/' });
-			}
-		},
-	},
-};
+<script setup>
+const currentYear = new Date().getFullYear();
 </script>
 
 <style lang="css" scoped>
