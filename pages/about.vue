@@ -1,3 +1,14 @@
+<script setup>
+useHead({
+	title: 'About - Pixelate',
+	link: [{ rel: 'canonical', href: 'https://pixelate.nl/about/' }],
+	meta: [
+		{ property: 'og:title', content: 'About - Pixelate' },
+		{ property: 'og:url', content: 'https://pixelate.nl/about/' }
+	]
+})
+</script>
+
 <template>
   <AppDrawer id="about" title="About">
     <p class="p">I'm a Principal Product Designer working on complex, data-rich products in the energy and utilities industry. I translate domain complexity into intuitive workflows and cohesive user experiences, and I bridge design and engineering by owning products from first sketch to production-ready code.</p>

@@ -38,7 +38,8 @@ export default defineNuxtConfig({
 				{ name: 'twitter:description', content: 'Principal Product Designer and Design Engineer for complex, data-rich products in the energy and utilities industry.' }
 			],
 			link: [
-				{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap' }
+				{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap' },
+				{ rel: 'canonical', href: 'https://pixelate.nl/' }
 			],
 			noscript: [{ innerHTML: 'This website requires JavaScript.' }]
 		},
