@@ -17,6 +17,12 @@
     color: rgb(var(--global--color--white));
     -ms-overflow-style: -ms-autohiding-scrollbar;
 }
+
+@media only screen and (min-width: 769px) {
+    .sheet {
+        width: 440px;
+    }
+}
 .sheet.page-enter-active {
     animation: slideInRight 0.3s ease-out;
 }
