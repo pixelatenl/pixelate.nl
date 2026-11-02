@@ -28,6 +28,11 @@ useHead({
       <li><a href="https://www.linkedin.com/in/roland-poot/" class="a">Linkedin</a></li>
       <li><a href="mailto:roland@pixelate.nl" class="a">roland@pixelate.nl</a></li>
       <li><a href="https://github.com/pixelatenl" class="a">Github</a></li>
+    </ul>
+        <h2 class="h2">Projects</h2>
+    <p class="p">A few of my personal projects:</p>
+    <ul class="list">
+      <li><a href="https://github.com/pixelatenl/home-energy-dashboard" class="a">Home Energy Dashboard</a></li>
       <li><a href="https://fleet.pixelate.nl/" class="a">Open Data Project (Fleet)</a></li>
     </ul>
   </AppDrawer>
