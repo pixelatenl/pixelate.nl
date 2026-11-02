@@ -35,6 +35,19 @@
 </template>
 <script setup>
 const currentYear = new Date().getFullYear();
+
+/*
+ * Privacy-first analytics (Simple Analytics), loaded at the end of the body.
+ */
+useHead({
+	script: [
+		{
+			src: 'https://scripts.simpleanalyticscdn.com/latest.js',
+			async: true,
+			tagPosition: 'bodyClose'
+		}
+	]
+});
 </script>
 
 <style lang="css" scoped>
