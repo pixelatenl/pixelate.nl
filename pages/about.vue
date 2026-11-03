@@ -33,7 +33,7 @@ useHead({
     <p class="p">A few of my personal projects:</p>
     <ul class="list">
       <li><a href="https://github.com/pixelatenl/home-energy-dashboard" class="a">Home Energy Dashboard</a></li>
-      <li><a href="https://fleet.pixelate.nl/" class="a">Open Data Project (Fleet)</a></li>
+      <li><a href="https://opendata.pixelate.nl/" class="a">Open Data Project</a></li>
     </ul>
   </AppDrawer>
 </template>
