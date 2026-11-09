@@ -1,9 +1,9 @@
 /* Links */
 .a {
-	border-bottom: 1px solid rgb(var(--global--color--secondary--100));
-	color: rgb(var(--global--color--secondary--100));
+	border-bottom: 1px solid rgba(var(--global--color--secondary), 0.5);
+	color: rgb(var(--global--color--secondary));
 	text-decoration: none;
-	transition: color 0.2s ease-in;
+	transition: color 0.2s ease-in, border-color 0.2s ease-in;
 }
 
 .a:hover {

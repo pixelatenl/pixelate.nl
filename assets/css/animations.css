@@ -37,3 +37,46 @@
 		opacity: 0;
 	}
 }
+
+@keyframes pixelIn {
+	0% {
+		opacity: 0;
+		filter: blur(6px);
+	}
+	100% {
+		opacity: 1;
+		filter: blur(0);
+	}
+}
+
+/* Timing carrier for the sheet page transition: Vue reads the animation
+   duration from the transition root to know when to remove the
+   page-enter/leave classes. The visible slide/fade animations run on child
+   elements; this is a no-op transform that only carries the timing. */
+@keyframes drawerTiming {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*:before,
+	*:after {
+		animation: none !important;
+		transition: none !important;
+	}
+
+	/* Elements that start hidden and rely on an animation to reach
+	   their final state are forced to that state. !important is required
+	   because the scoped component styles (e.g. .intro[data-v-…]) outrank
+	   this global selector. */
+	.intro,
+	.intro__actions,
+	.logo::after {
+		opacity: 1 !important;
+	}
+}

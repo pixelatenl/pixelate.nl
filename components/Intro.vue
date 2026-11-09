@@ -31,7 +31,11 @@
 }
 
 .intro__header {
-	font-size: 2.3rem;
+	font-family: var(--global--display--FontFamily);
+	font-size: clamp(2.3rem, 4.6vw, 3.4rem);
+	line-height: 1.05;
+	font-weight: 700;
+	letter-spacing: -0.02em;
 	margin: 0 0 var(--global--spacer--sm) 0;
 }
 @media only screen and (max-width: 768px) {
@@ -42,6 +46,12 @@
 }
 .intro__line {
 	margin: 0 0 var(--global--spacer--sm) 0;
+	color: var(--global--color--text--muted);
+}
+.intro__line strong {
+	display: inline-block;
+	color: rgb(var(--global--color--primary));
+	animation: pixelIn 0.9s steps(9, end) 2.6s both;
 }
 
 .intro__actions {

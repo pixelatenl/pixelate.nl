@@ -22,14 +22,23 @@
 	/* --global--concept--indicator--modifier */
 	--global--color--white: 255, 255, 255;
 
-	--global--color--primary: 72, 185, 209;
+	--global--color--primary: 83, 215, 234; /* refreshed cyan */
 	--global--color--primary--100: var(--global--color--primary);
-	--global--color--primary--500: 15, 53, 61;
-	--global--color--primary--600: 5, 18, 20;
+	--global--color--primary--500: 4, 22, 26; /* deepened base */
+	--global--color--primary--600: 3, 15, 19;
 
-	--global--color--secondary: 244, 136, 34;
+	--global--color--secondary: 246, 144, 46; /* link orange */
 	--global--color--secondary--100: var(--global--color--secondary);
-	--global--color--secondary--200: 62, 181, 206;
+	--global--color--secondary--200: 255, 171, 85; /* link hover */
+
+	--global--color--text: 236, 247, 250;
+	--global--color--text--muted: rgba(236, 247, 250, 0.66);
+	--global--color--hairline: rgba(236, 247, 250, 0.14);
+	--global--color--panel: rgba(7, 32, 39, 0.88);
+	--global--color--primary--soft: rgba(83, 215, 234, 0.45);
+	--global--color--primary--dim: rgba(83, 215, 234, 0.28);
+
+	--global--display--FontFamily: 'Space Grotesk', 'Avenir Next', 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -39,4 +48,5 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: rgb(var(--global--color--primary--500));
+	color: rgb(var(--global--color--text));
 }

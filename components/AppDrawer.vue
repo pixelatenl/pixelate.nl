@@ -1,12 +1,15 @@
 <template>
-	<div class="sheet" ref="sheet">
-		<section class="sheet__content" :id="id">
-			<header class="sheet__header">
-				<h1 class="sheet__title">{{ title }}</h1>
-				<NuxtLink to="/" class="sheet__close-button">Close</NuxtLink>
-			</header>
-			<slot />
-		</section>
+	<div class="drawer">
+		<div class="sheet__scrim"></div>
+		<div class="sheet" ref="sheet">
+			<section class="sheet__content" :id="id">
+				<header class="sheet__header">
+					<h1 class="sheet__title">{{ title }}</h1>
+					<NuxtLink to="/" class="sheet__close-button">Close</NuxtLink>
+				</header>
+				<slot />
+			</section>
+		</div>
 	</div>
 </template>
 

@@ -29,12 +29,30 @@
 	}
 }
 
+.logo::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(circle, rgba(var(--global--color--primary), 0.12), transparent 65%);
+	filter: blur(18px);
+	pointer-events: none;
+	opacity: 0;
+	/* appear once the first 3 circles have dropped (1.8s delay + 1s drop) */
+	animation: fadeIn 0.8s ease-out 2.8s both;
+}
+
 .logo__circle {
 	position: absolute;
 	display: inline-block;
 	visibility: visible !important;
 	overflow: hidden;
 	border-radius: 100%;
+	background-image: radial-gradient(circle at 34% 30%, rgba(255, 255, 255, 0.4), transparent 45%);
+	box-shadow: 0 0 26px rgba(var(--global--color--primary), 0.28);
 	animation: logo__animation 1s ease-out 1;
 	animation-fill-mode: both;
 }

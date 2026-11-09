@@ -1,4 +1,49 @@
 
+/* Sheet wrapper: carries the page transition and holds the scrim behind
+   the sheet. pointer-events pass through so links/buttons outside the
+   sheet keep their own click behavior. */
+.drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    pointer-events: none;
+}
+/* The drawer slides in (0.25s) and out (0.3s). The scrim never moves; it
+   fades in over 0.4s so the whole slide-in happens during the overlay fade,
+   and fades out over 0.3s. The no-op carrier animation on .drawer lets Vue
+   time the transition classes from the root (0.4s enter / 0.3s leave). */
+.drawer.page-enter-active {
+    animation: drawerTiming 0.4s linear;
+}
+.drawer.page-leave-active {
+    animation: drawerTiming 0.3s linear;
+}
+.drawer.page-enter-active .sheet {
+    animation: slideInRight 0.25s ease-out both;
+}
+.drawer.page-leave-active .sheet {
+    animation: slideOutRight 0.3s ease-in both;
+}
+.drawer.page-enter-active .sheet__scrim {
+    animation: fadeIn 0.4s ease-out both;
+}
+.drawer.page-leave-active .sheet__scrim {
+    animation: fadeOut 0.3s ease-in both;
+}
+
+/* Scrim behind the sheet */
+.sheet__scrim {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(var(--global--color--primary--600), 0.55);
+}
+
 /* Sheet */
 .sheet {
     position: fixed;
@@ -12,8 +57,12 @@
     width: 340px;
     height: 100%;
     outline: none;
-    background-color: rgb(var(--global--color--primary--500));
-    box-shadow: 0 0 10px 10px rgba(var(--global--color--primary--600), 0.2);
+    pointer-events: auto;
+    background-color: var(--global--color--panel);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    border-left: 1px solid var(--global--color--hairline);
+    box-shadow: -30px 0 60px rgba(var(--global--color--primary--600), 0.45);
     color: rgb(var(--global--color--white));
     -ms-overflow-style: -ms-autohiding-scrollbar;
 }
@@ -22,12 +71,6 @@
     .sheet {
         width: 440px;
     }
-}
-.sheet.page-enter-active {
-    animation: slideInRight 0.3s ease-out;
-}
-.sheet.page-leave-active {
-    animation: slideOutRight 0.3s ease-in;
 }
 
 .sheet__content {
@@ -44,7 +87,9 @@
 
 .sheet__title {
     margin: 1rem 0;
+    font-family: var(--global--display--FontFamily);
     font-weight: 700;
+    letter-spacing: -0.02em;
     font-size: 2rem;
     line-height: 2rem;
 }
