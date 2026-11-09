@@ -35,6 +35,8 @@
 	--global--color--text--muted: rgba(236, 247, 250, 0.66);
 	--global--color--hairline: rgba(236, 247, 250, 0.14);
 	--global--color--panel: rgba(7, 32, 39, 0.88);
+	--global--color--panel--glass: rgba(7, 32, 39, 0.38);
+	--global--color--glass--border: rgba(236, 247, 250, 0.28);
 	--global--color--primary--soft: rgba(83, 215, 234, 0.45);
 	--global--color--primary--dim: rgba(83, 215, 234, 0.28);
 
