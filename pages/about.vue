@@ -20,7 +20,7 @@ useHead({
       <li>Automation UX</li>
       <li>Design Systems</li>
       <li>Design Engineering</li>
-      <li>Figma (plus a keyboard, when pixels must ship)</li>
+      <li>Design tools, whatever gets the job done, plus a keyboard when pixels must ship</li>
     </ul>
     <h2 class="h2">Connect with me</h2>
     <p class="p">I'm not one for social media theatrics. LinkedIn and email will reach me.</p>
