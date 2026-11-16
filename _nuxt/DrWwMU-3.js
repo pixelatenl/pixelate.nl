@@ -1,0 +1,1 @@
+import{f as e,s as t,t as n}from"#entry";var r={};function i(n,r){return e(),t(`div`)}var a=n(r,[[`render`,i]]);export{a as default};
